@@ -6,7 +6,7 @@ FONT = ("Arial", 24, "normal")
 class Scoreboard(Turtle):
     def __init__(self):
         super().__init__()
-        with open("SnakeGame/data.txt") as data:
+        with open("data.txt") as data:
             self.high_score = int(data.read())
         self.score = 0
         self.penup()
